@@ -15,8 +15,8 @@ WORKDIR /usr/src/app
 # Copy package files
 COPY package*.json ./
 
-# Install npm dependencies
-RUN npm ci
+# Install npm dependencies using legacy-peer-deps to avoid dependency resolution blocks
+RUN npm install --legacy-peer-deps
 
 # Copy application source code
 COPY . .
