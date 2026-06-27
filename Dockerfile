@@ -1,5 +1,5 @@
-# Base image with Node.js 20
-FROM node:20-bullseye-slim
+# Base image with Node.js 20 on Debian Bookworm (which has Python 3.11+)
+FROM node:20-bookworm-slim
 
 # Install system dependencies: ffmpeg (for merging audio/video) and python3 (required by yt-dlp)
 RUN apt-get update && apt-get install -y \
