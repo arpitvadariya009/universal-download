@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  serverExternalPackages: ["@ffmpeg-installer/ffmpeg"],
+  serverExternalPackages: ["@ffmpeg-installer/ffmpeg", "yt-dlp-exec"],
 };
 
 export default nextConfig;
